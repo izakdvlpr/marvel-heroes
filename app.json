@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "HelloWorld",
+    "name": "Marvel Heroes",
     "slug": "marvel-heroes",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon.png",    
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
