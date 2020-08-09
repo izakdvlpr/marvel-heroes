@@ -1,7 +1,36 @@
 import React from 'react';
+import { StatusBar } from 'expo-status-bar';
+import { AppLoading } from 'expo';
 
-import Routes from './src/routes';
+import { useFonts } from 'expo-font';
 
-const App = () => <Routes />;
+import {
+  gilroyBold,
+  gilroyHeavy,
+  gilroyMedium,
+  gilroyRegular,
+  gilroySemibold,
+} from './src/assets/fonts';
 
-export default App;
+import AppStack from './src/routes/AppStack';
+
+export default function App() {
+  const [fontsLoaded] = useFonts({
+    gilroyBold,
+    gilroyHeavy,
+    gilroyMedium,
+    gilroyRegular,
+    gilroySemibold,
+  });
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  } else {
+    return (
+      <>
+        <AppStack />
+        <StatusBar style="light" />
+      </>
+    );
+  }
+}
