@@ -1,21 +1,21 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
 
-import Header from "../../components/Header";
+import PageHeader from '../../components/PageHeader';
 
-const Home: React.FC = () => {
+import styles from './styles';
+
+function Home() {
   return (
     <View style={styles.container}>
-      <Header />
+      <PageHeader />
+      
+      <View style={styles.section}>
+        <Text style={styles.welcome}>Bem vindo ao Marvel Heroes</Text>
+        <Text style={styles.title}>Escolha o seu personagem</Text>
+      </View>
     </View>
   );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 32,
-  },
-});
+}
 
 export default Home;
