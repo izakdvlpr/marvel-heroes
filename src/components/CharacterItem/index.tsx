@@ -1,16 +1,21 @@
 import React from 'react';
-import { View, Text, ImageBackground } from 'react-native';
-
-import backgroundImage from '../../assets/chars/spider-man.png';
+import {
+  View,
+  Text,
+  ImageBackground,
+  ImageSourcePropType,
+  TouchableOpacity,
+} from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import styles from './styles';
 
 export interface CharacterProps {
-  name?: string;
-  alterEgo?: string;
-  imagePath?: string;
-  biography?: string;
-  caracteristics?: {
+  name: string;
+  alterEgo: string;
+  imagePath: ImageSourcePropType;
+  biography: string;
+  caracteristics: {
     birth: string;
     weight: {
       value: number;
@@ -22,29 +27,41 @@ export interface CharacterProps {
     };
     universe: string;
   };
-  abilities?: {
-    force: 70;
-    intelligence: 65;
-    agility: 90;
-    endurance: 60;
-    velocity: 80;
+  abilities: {
+    force: number;
+    intelligence: number;
+    agility: number;
+    endurance: number;
+    velocity: number;
   };
-  movies?: string[];
+  movies: ImageSourcePropType[];
 }
 
-const CharacterItem: React.FC<CharacterProps> = () => {
+interface Character {
+  data: CharacterProps;
+}
+
+const CharacterItem: React.FC<Character> = ({ data }) => {
+  const { navigate } = useNavigation();
+
+  const handleNavigateToDetails = () => {
+    navigate('Details', {
+      data,
+    });
+  };
+
   return (
     <View style={styles.container}>
-      <View style={styles.content}>
+      <TouchableOpacity onPress={handleNavigateToDetails}>
         <ImageBackground
-          source={backgroundImage}
+          source={data.imagePath}
           style={styles.image}
           imageStyle={{ borderRadius: 25 }}
-        >                  
-          <Text style={styles.alterEgo}>Peter Parker</Text>
-          <Text style={styles.name}>Homem Aranha</Text>
-        </ImageBackground>                
-      </View>
+        >
+          <Text style={styles.alterEgo}>{data.alterEgo}</Text>
+          <Text style={styles.name}>{data.name}</Text>
+        </ImageBackground>
+      </TouchableOpacity>
     </View>
   );
 };

@@ -1,45 +1,74 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  container: {},
-
-  section: {
-    marginTop: 8,
-    margin: 20,
+  container: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
   },
 
-  welcome: {
+  section: {
+    margin: 20, 
+    marginTop: 8
+  },
+
+  subTitle: {
     fontFamily: 'gilroyMedium',
     fontSize: 16,
+    
     color: '#B7B7C8',
   },
 
   title: {
     fontFamily: 'gilroyHeavy',
     fontSize: 32,
+    
     color: '#313140',
   },
 
-  selectCharacter: {
-    marginTop: 22,    
-    marginBottom: 22,
-    
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
+  characterSelect: {
+    marginTop: 15,
+        
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
-  selectCharacterCircle: {
+  characterSelectCircle: {
     margin: 5,
-    padding: 9,  
-    
-    borderRadius: 50
+    padding: 9,
+
+    borderRadius: 50,
   },
 
-  selectCharacterIcon: {
+  characterSelectIcon: {
     width: 32,
     height: 32,
   },
+  
+  characterContainer: {
+    flex: 1,
+  },
+  
+  characterHeader: {
+    marginHorizontal: 20,
+    marginVertical: 10,
+    
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  
+  characterTitle: {
+    fontFamily: 'gilroyBold',
+    fontSize: 18,
+    color: '#F2264B',
+  },
+  
+  characterLabel: {
+    fontFamily: 'gilroyMedium',
+    fontSize: 14,
+    color: '#B7B7C8',
+  }  
 });
 
 export default styles;

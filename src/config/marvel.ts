@@ -1,4 +1,0 @@
-export default {
-  PUBLIC_KEY: "3b6041297a0a93b6b945fcc130637961",
-  PRIVATE_KEY: "bab11a7729aee66f117633f22a46920efed701d1",
-}
