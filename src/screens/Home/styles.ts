@@ -33,16 +33,19 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  characterSelectCircle: {
+  characterSelectCircle: {    
+    width: 50,
+    height: 50,
+    
     margin: 5,
-    padding: 9,
+    padding: 10,    
 
     borderRadius: 50,
   },
 
   characterSelectIcon: {
-    width: 32,
-    height: 32,
+    width: 30,
+    height: 30,
   },
   
   characterContainer: {

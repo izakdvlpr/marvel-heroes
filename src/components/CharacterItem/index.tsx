@@ -10,7 +10,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import styles from './styles';
 
-export interface CharacterProps {
+interface CharacterProps {
   name: string;
   alterEgo: string;
   imagePath: ImageSourcePropType;
