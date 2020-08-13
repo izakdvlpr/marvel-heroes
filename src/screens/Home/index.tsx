@@ -62,7 +62,7 @@ const Home = () => {
               <Text style={styles.characterTitle}>
                 {type.charAt(0).toUpperCase() + type.slice(1)}
               </Text>
-              <TouchableOpacity onPress={handleNavigateToCharacterList}>
+              <TouchableOpacity onPress={() => {}}>
                 <Text style={styles.characterLabel}>Ver tudo</Text>
               </TouchableOpacity>
             </View>
