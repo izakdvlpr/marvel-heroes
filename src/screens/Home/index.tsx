@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React from 'react';
 import {
   Text,
@@ -30,14 +32,15 @@ const Home = () => {
     <View style={styles.container}>
       <PageHeader />
 
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.section}>
           <Text style={styles.subTitle}>Bem vindo ao Marvel Heroes</Text>
-          <Text style={styles.title}>Escolha o seu personagem</Text>          
+          <Text style={styles.title}>Escolha o seu personagem</Text>
 
           <View style={styles.characterSelect}>
             {icons.map(icon => (
               <BorderlessButton
+                key={icon.color}
                 style={[
                   styles.characterSelectCircle,
                   { backgroundColor: icon.color },
@@ -49,7 +52,7 @@ const Home = () => {
                   style={styles.characterSelectIcon}
                 />
               </BorderlessButton>
-            ))}  
+            ))}
           </View>
         </View>
 
@@ -63,7 +66,7 @@ const Home = () => {
                 <Text style={styles.characterLabel}>Ver tudo</Text>
               </TouchableOpacity>
             </View>
-
+            
             <FlatList
               data={data[type]}
               keyExtractor={item => String(item.name)}
@@ -71,6 +74,7 @@ const Home = () => {
                 <CharacterItem key={item.name} data={item} />
               )}
               horizontal
+              showsHorizontalScrollIndicator={false}
             />
           </SafeAreaView>
         ))}

@@ -10,7 +10,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import styles from './styles';
 
-interface CharacterProps {
+export interface CharacterProps {
   name: string;
   alterEgo: string;
   imagePath: ImageSourcePropType;
@@ -28,11 +28,11 @@ interface CharacterProps {
     universe: string;
   };
   abilities: {
-    force: number;
-    intelligence: number;
-    agility: number;
-    endurance: number;
-    velocity: number;
+    'força': number;
+    'Inteligência': number;
+    'Agilidade': number;
+    'Resistência': number;
+    'Velocidade': number;
   };
   movies: ImageSourcePropType[];
 }
@@ -46,7 +46,7 @@ const CharacterItem: React.FC<Character> = ({ data }) => {
 
   const handleNavigateToDetails = () => {
     navigate('Details', {
-      data,
+      character: data,
     });
   };
 
