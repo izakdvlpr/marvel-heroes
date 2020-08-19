@@ -27,7 +27,7 @@ const Details = () => {
   const character: CharacterProps = route.params.character;
 
   const handleToMainPage = () => {
-    navigation.goBack();
+    navigation.navigate('Home');
   };
 
   const caracteristicIcon: {
@@ -65,8 +65,8 @@ const Details = () => {
             </View>
 
             <View style={styles.caracteristics}>
-              {Object.keys(character.caracteristics).map(caracteristic => (
-                <View key={caracteristic} style={styles.caracteristicsIcon}>
+              {Object.keys(character.caracteristics).map((caracteristic, index) => (
+                <View key={index} style={styles.caracteristicsIcon}>
                   <Image source={caracteristicIcon[caracteristic]} />
                   <Text style={styles.caracteristicsDescription}>
                     {typeof character.caracteristics[caracteristic] !== 'object'
@@ -90,8 +90,8 @@ const Details = () => {
           <Text style={styles.informationTitle}>Habilidades</Text>
 
           <View style={styles.abilitiesContainer}>
-            {Object.keys(character.abilities).map(abilitie => (
-              <View style={styles.abilitiesRow}>
+            {Object.keys(character.abilities).map((abilitie, index) => (
+              <View key={index} style={styles.abilitiesRow}>
                 <Text style={styles.abilitiesLabel}>
                   {abilitie.charAt(0).toUpperCase() + abilitie.slice(1)}
                 </Text>

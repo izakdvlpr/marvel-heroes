@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
 
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#FFF',
   },
 
   logo: {
