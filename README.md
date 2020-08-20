@@ -11,15 +11,15 @@
     <a href="#wrench-creditos">Creditos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#customs-license">Licença</a>
   </p>
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/zevdvlpr/marvel-heroes?color=ED1D27&style=flat-square">  
+  <img src="https://img.shields.io/github/repo-size/zevdvlpr/marvel-heroes?color=ED1D27&style=flat-square" alt="GitHub repo size">
   <a href="https://github.com/zevdvlpr/marvel-heroes/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/zevdvlpr/marvel-heroes?color=ED1D27&style=flat-square">
+    <img src="https://img.shields.io/github/last-commit/zevdvlpr/marvel-heroes?color=ED1D27&style=flat-square" alt="GitHub last commit">
   </a>
   <a href="https://github.com/zevdvlpr/marvel-heroes/tree/master/LICENSE">
-    <img src="https://img.shields.io/github/license/zevdvlpr/marvel-heroes?color=ED1D27&label=license&style=flat-square" alt="License">
+    <img src="https://img.shields.io/github/license/zevdvlpr/marvel-heroes?color=ED1D27&label=license&style=flat-square" alt="GitHub License">
   </a>  
   <a href="https://github.com/zevdvlpr/marvel-heroes/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/zevdvlpr/marvel-heroes?color=ED1D27&logo=github&style=flat-square">
+    <img src="https://img.shields.io/github/stars/zevdvlpr/marvel-heroes?color=ED1D27&logo=github&style=flat-square" alt="GitHub Stargazers">
   </a>
 </div>
 
