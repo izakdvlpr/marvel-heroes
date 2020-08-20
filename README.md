@@ -1,6 +1,6 @@
 <div align="center">
   <img src="./src/assets/icons/marvel@3x.png" width="220" alt="logo">
-  <p style="font-weight: bold">Escolha seu héroi</p>
+  <b style="font-weight: bold">Escolha seu héroi</b>
   <p>
     <a href="#keyboard-resultado">Resultado</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#page_with_curl-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -90,6 +90,7 @@ Faça o download do **app para android** [clicando aqui]().
 - Push a sua branch: `git push origin my-feature`
 
 ## :wrench: Creditos
+
 - [Rocketseat](https://www.youtube.com/rocketseat)
 - [Diego Fernandes](https://github.com/diego3g)
 
