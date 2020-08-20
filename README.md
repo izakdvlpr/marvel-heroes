@@ -1,6 +1,6 @@
 <div align="center">
   <img src="./src/assets/icons/marvel@3x.png" width="220" alt="logo">
-  <b style="font-weight: bold">Escolha seu héroi</b>
+  <p><b>Escolha seu héroi</b></p>
   <p>
     <a href="#keyboard-resultado">Resultado</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#page_with_curl-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
